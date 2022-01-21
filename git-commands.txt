@@ -5,10 +5,17 @@ git add <file> - Agregalo el fichero <file> a las pila de ficheros para realizar
 git status - Visualizas el estado de los archivos que estan dentro de la pila de archivoz a realizar un commit
 
 git branch - Muestra en la rama que te encuentras
+git branch <branch> - Creas una rama nueva llamada <branch>
 
 git checkout -b <branch> - Crea una nueva rama llamada <branch> o cambia de branch
 
 git remote add <name> <url> - Agregamos nuestro repositorio remoto al repositorio <url> con nombre <name>
 git remote remove <name> - Elimina el repositorio remoto
 
-git push -u <name> <branch> - Envias todos los avances de tu rama actual a la rama main
+git push <name> <branch> - Envias todos los avances de tu rama actual a la rama main
+
+git pull - Extraes los cambios de servidor remoto y se fusionan.
+
+git fetch - Extraes los cambios de servidor remoto sin embargo no lo fusionas
+
+git merge origin/<branch> - Fusionas los cambios a <branch>
