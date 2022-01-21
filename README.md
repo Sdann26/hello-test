@@ -1,2 +1,2 @@
 # hello-test
-Repositorio
+Repositorio para realizar pruebas con Git y Github Desktop
