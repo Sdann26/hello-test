@@ -1,0 +1,14 @@
+git init - Crea un repositorio local
+
+git add <file> - Agregalo el fichero <file> a las pila de ficheros para realizarle un commit
+
+git status - Visualizas el estado de los archivos que estan dentro de la pila de archivoz a realizar un commit
+
+git branch - Muestra en la rama que te encuentras
+
+git checkout -b <branch> - Crea una nueva rama llamada <branch> o cambia de branch
+
+git remote add <name> <url> - Agregamos nuestro repositorio remoto al repositorio <url> con nombre <name>
+git remote remove <name> - Elimina el repositorio remoto
+
+git push -u <name> <branch> - Envias todos los avances de tu rama actual a la rama main
