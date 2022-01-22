@@ -6,6 +6,7 @@ git status - Visualizas el estado de los archivos que estan dentro de la pila de
 
 git branch - Muestra en la rama que te encuentras
 git branch <branch> - Creas una rama nueva llamada <branch>
+git branch -d <branch> - Elimina la rama llamada <branch>
 
 git checkout -b <branch> - Crea una nueva rama llamada <branch> o cambia de branch
 
@@ -13,9 +14,19 @@ git remote add <name> <url> - Agregamos nuestro repositorio remoto al repositori
 git remote remove <name> - Elimina el repositorio remoto
 
 git push <name> <branch> - Envias todos los avances de tu rama actual a la rama main
+git push <name> :<branch> - Eliminas la rama <branch> del repositorio remoto
+git push <name> <rama_local>:<rama_remota> - Eliminas <rama_remota> que tiene equivalencia a la <rama_local>
+git push <name> <nombre_etiqueta> - Subimos una etiqueta a nuestro repositorio con el nombre <nombre_etiqueta>
+git push <name> --tags - Subimos todas las etiquetas que tengamos en el repositorio local al remoto
 
 git pull - Extraes los cambios de servidor remoto y se fusionan.
 
 git fetch - Extraes los cambios de servidor remoto sin embargo no lo fusionas
 
 git merge origin/<branch> - Fusionas los cambios a <branch>
+
+git tag - Sirve para ver las etiquetas creadas
+git tag <nombre> - Creas una etiqueta tipo lightweight con nombre <nombre> para el ultimo commit
+git tag -a <nombre> -m "<mensaje>" - Creas una etiqueta tipo annotated que es mas descriptiva para el ultimo commit
+git tag -a <nombre> <hash_commit> - Crear una etiqueta para el commit con esta relaciona con su <hash_commit>
+git tag -d <nombre> - Eliminas la etiqueta que tiene el nombre <nombre>
